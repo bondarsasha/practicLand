@@ -465,14 +465,20 @@ footer {
     }
 }
 /*============    ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
-.modal-dialog {
-    margin-top: 15%;
+.big_modal {
+    margin-top: 10%;
+    width: 60%;
+}
+.modal_dialog {
+  margin-top: 10%;
 }
 .header_modal {
     h4 {
         text-transform: uppercase;
         color: #666666;
         .bold;
+        text-align: center;
+        padding: 10px;
     }
 }
 .modal-header {
@@ -489,7 +495,7 @@ footer {
   border-radius: 0;
   input[name="name"] {
       background: url(../img/name-input.png) no-repeat center left 5px;
-      margin-top: 20px;
+      margin-top: 15px;
       padding: 25px;
       padding-left: 30px;
       border-radius: 0;
@@ -515,6 +521,20 @@ footer {
           opacity: 1;
       }
   }
+  textarea {
+    width: 100%;
+    margin-top: 15px;
+    padding: 25px;
+    padding-left: 30px;
+    border-radius: 0;
+    border: 1px solid #cccccc;
+    .light;
+    opacity: 0.5;
+    &:hover,
+    &:focus {
+        opacity: 1;
+    }
+  }
   button[type="submit"] {
       background-color: #357ebd;
       margin-top: 15px;
@@ -530,6 +550,10 @@ footer {
           border: 1px solid #fc8b1a;
           border-bottom: 2px solid #fc8b1a;
       }
+  }
+  p {
+    .light;
+    font-size: 1.8rem;
   }
 }
 .header_modal_info {
