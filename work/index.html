@@ -20,7 +20,7 @@
     <![endif]-->
   </head>
   <body>
-    <header>
+    <header class="hidden-xs">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 logotype">
@@ -40,26 +40,26 @@
         </div>
     </header>
 
-    <nav>
+    <nav class="hidden-xs" id="top_nav">
         <div class="container">
             <div class="row">
                 <ul class="list-inline">
-                    <a href="#">
+                    <a href="#main">
                         <li>Главная</li>
                     </a>
-                    <a href="#">
+                    <a href="#types">
                         <li>Виды сантехники</li>
                     </a>
-                    <a href="#">
+                    <a href="#portfolio">
                         <li>Наши работы</li>
                     </a>
-                    <a href="#">
+                    <a href="#offer">
                         <li>Акция</li>
                     </a>
-                    <a href="#">
+                    <a href="#feedback">
                         <li>Отзывы</li>
                     </a>
-                    <a href="#">
+                    <a href="#contacts">
                         <li>Контакты</li>
                     </a>
                 </ul>
@@ -67,17 +67,38 @@
         </div>
     </nav>
 
+    <nav class="visible-xs">
+      <div class="container">
+        <div class="col-xs-3 text-center">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars"></i>
+          </a>
+          <ul class="dropdown_menu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Виды сантехники</a></li>
+            <li><a href="#">Наши работы</a></li>
+            <li><a href="#">Акция</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-offset-3">
+          <img src="img/logo.png" alt="" class="img-responsive pull-right">
+        </div>
+      </div>
+    </nav>
+
     <section id="main">
         <div class="container">
-            <div class="row main_header">
+            <div class="row wow fadeInUp main_header">
                 <h1><span>Установим сантехнику в вашей квартире</span><br> <span>за 2 часа с полной гарантией</span><br><span>и бесплатной доставкой</span></h1>
             </div>
-            <div class="row">
+            <div class="row wow fadeInLeft" data-wow-delay="0.3">
                 <h3><span>Закажите выезд сантехника на дом.</span><span>Это бесплатно!</span></h3>
             </div>
             <div class="row main_buttons">
-            <button data-toggle="modal" id="get_measurer" href="#get_measurer_modal">Вызвать сантехника</button>
-            <a href="#types"><button id="get_types">Выбрать сантехнику</button></a>
+            <button class="wow fadeInLeft" data-wow-delay="0.5s" data-toggle="modal" id="get_measurer" href="#get_measurer_modal">Вызвать сантехника</button>
+            <a href="#types"><button class="wow fadeInLeft" data-wow-delay="0.8s" id="get_types">Выбрать сантехнику</button></a>
             </div>
         </div>
     </section>
@@ -85,13 +106,13 @@
     <section id="types">
         <div class="container">
             <div class="row">
-                <div class="section_header text-center">
+                <div class="section_header wow fadeInUp text-center">
                     <h2>Виды сантехники</h2>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card wow bounceInUp" data-wow-delay="0.2s">
                         <img src="img/1.png" alt="Сифоны для умывальников" class="img-responsive center-block">
                         <h4>Сифоны для умывальников</h4>
                         <br>
@@ -100,7 +121,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card wow bounceInUp" data-wow-delay="0.3s">
                         <img src="img/2.png" alt="Сифоны для моек" class="img-responsive center-block">
                         <h4>Сифоны для моек</h4>
                         <br>
@@ -109,7 +130,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card wow bounceInUp" data-wow-delay="0.4s">
                         <img src="img/3.png" alt="Сифоны для ванн" class="img-responsive center-block">
                         <h4>Сифоны для ванн</h4>
                         <br>
@@ -118,7 +139,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card wow bounceInUp" data-wow-delay="0.5s">
                         <img src="img/4.png" alt="Гофросифоны" class="img-responsive center-block">
                         <h4>Гофросифоны</h4>
                         <br>
@@ -150,7 +171,7 @@
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="section_header text-center">
+                <div class="section_header wow fadeInUp text-center">
                     <h2>Наши работы</h2>
                 </div>
             </div>
@@ -201,7 +222,7 @@
     <section id="feedback">
         <div class="container">
             <div class="row">
-                <div class="section_header text-center">
+                <div class="section_header wow fadeInUp text-center">
                     <h2>Отзывы о нашем товаре</h2>
                 </div>
             </div>
@@ -233,18 +254,11 @@
                                   <div class="col-md-8">
                                       <div class="row">
                                           <div class="col-md-2">
-                                              <img src="img/avatar-1.jpg" alt="" class="img-circle center-block">
+                                              <img src="" alt="" class="img-circle center-block">
                                           </div>
                                           <div class="col-md-10">
                                               <h5>Марина Забелина</h5>
                                               <a href="#">vk.com/id32238729</a>
-                                          </div>
-                                      </div>
-                                      <div class="row">
-                                          <div class="audio">
-                                              <audio controls>
-                                                  <sourse src="audio/feedback_1.mp3" type="audio.mpeg"></sourse>
-                                              </audio>
                                           </div>
                                       </div>
                                       <div class="row">
@@ -444,12 +458,13 @@
                  </div>
                </div>
                <div class="row">
-                 <form action="#">
+                 <form action="send.php" method="post">
                    <div class="col-xs-4">
+                     <input type="hidden" name="what" value="Сифоны для умывальников">
                      <input name="name" type="text" required placeholder="Имя..." class="form-control form_input">
                    </div>
                    <div class="col-xs-4">
-                     <input name="phone" type="text" required placeholder="Телефон" class="form-control form_input">
+                     <input name="phone" id="phone-3" type="text" required placeholder="Телефон" class="form-control form_input">
                    </div>
                    <div class="col-xs-4">
                      <button type="submit">Заказать сантехнику</button>
@@ -489,12 +504,13 @@
                  </div>
                </div>
                <div class="row">
-                 <form action="#">
+                 <form action="send.php" method="post">
                    <div class="col-xs-4">
+                     <input type="hidden" name="what" value="Сифоны для моек">
                      <input name="name" type="text" required placeholder="Имя..." class="form-control form_input">
                    </div>
                    <div class="col-xs-4">
-                     <input name="phone" type="text" required placeholder="Телефон" class="form-control form_input">
+                     <input name="phone" id="phone-4" type="text" required placeholder="Телефон" class="form-control form_input">
                    </div>
                    <div class="col-xs-4">
                      <button type="submit">Заказать сантехнику</button>
@@ -534,12 +550,13 @@
                  </div>
                </div>
                <div class="row">
-                 <form action="#">
+                 <form action="send.php" method="post">
                    <div class="col-xs-4">
+                     <input type="hidden" name="what" value="Сифоны для ванн">
                      <input name="name" type="text" required placeholder="Имя..." class="form-control form_input">
                    </div>
                    <div class="col-xs-4">
-                     <input name="phone" type="text" required placeholder="Телефон" class="form-control form_input">
+                     <input name="phone" id="phone-5" type="text" required placeholder="Телефон" class="form-control form_input">
                    </div>
                    <div class="col-xs-4">
                      <button type="submit">Заказать сантехнику</button>
@@ -579,12 +596,13 @@
                  </div>
                </div>
                <div class="row">
-                 <form action="#">
+                 <form action="send.php" method="post">
                    <div class="col-xs-4">
+                     <input type="hidden" name="what" value="Гофросифоны">
                      <input name="name" type="text" required placeholder="Имя..." class="form-control form_input">
                    </div>
                    <div class="col-xs-4">
-                     <input name="phone" type="text" required placeholder="Телефон" class="form-control form_input">
+                     <input name="phone" id="phone-6" type="text" required placeholder="Телефон" class="form-control form_input">
                    </div>
                    <div class="col-xs-4">
                      <button type="submit">Заказать сантехнику</button>
@@ -612,12 +630,13 @@
                 </div>
            </div>
            <div class="row">
-             <form action="#">
+             <form action="send.php" method="post">
                <div class="col-xs-12">
+                 <input type="hidden" name="what" value="Для заказа сантехники оставьте свои данные">
                  <input name="name" type="text" required placeholder="Имя..." class="form-control form_input">
                </div>
                <div class="col-xs-12">
-                 <input name="phone" type="text" required placeholder="Телефон" class="form-control form_input">
+                 <input name="phone" id="phone-7" type="text" required placeholder="Телефон" class="form-control form_input">
                </div>
                <div class="col-xs-12">
                  <button type="submit">Заказать</button>
@@ -645,12 +664,13 @@
                 </div>
            </div>
            <div class="row">
-             <form action="#">
+             <form action="send.php" method="post">
                <div class="col-xs-12">
+                 <input type="hidden" name="what" value="Задайте вопрос">
                  <input name="name" type="text" required placeholder="Имя..." class="form-control form_input">
                </div>
                <div class="col-xs-12">
-                 <input name="phone" type="text" required placeholder="Телефон" class="form-control form_input">
+                 <input name="phone" id="phone-8" type="text" required placeholder="Телефон" class="form-control form_input">
                </div>
                <div class="col-xs-12">
                  <textarea name="question" placeholder="Ваш вопрос" id="" cols="30" rows="3"></textarea>
@@ -675,13 +695,55 @@
       new WOW().init();
     </script>
     <script>
-      $(document).ready(
-          function() {
-              $("html").niceScroll({cursorcolor:"#000"});
-          }
-      );
-    </script>
+      var h_hght = 110;
+      var h_mrg = 0;
 
+      $(function(){
+
+          var elem = $('#top_nav');
+          var top = $(this).scrollTop();
+
+          if(top > h_hght){
+              elem.css('top', h_mrg);
+          }
+          $(window).scroll(function(){
+              top = $(this).scrollTop();
+
+              if (top+h_mrg < h_hght) {
+                  elem.css('top', (h_hght-top));
+              } else {
+                  elem.css('top', h_mrg);
+              }
+          });
+      });
+</script>
+<script>
+  $(document).ready(function() {
+    $("#top_nav").on("click","a",function (event) {
+      event.preventDefault();
+
+      var id = $(this).attr('href'),
+
+      top = $(id).offset().top;
+
+      $('body,html').animate({scrollTop: top}, 500);
+    });
+  });
+</script>
+<script>
+  $(document).ready(function() {
+    $(".main_buttons").on("click","a",function (event) {
+      event.preventDefault();
+
+      var id = $(this).attr('href'),
+
+      top = $(id).offset().top;
+
+      $('body,html').animate({scrollTop: top}, 500);
+    });
+  });
+</script>
+    <link rel="stylesheet" href="css/animate.css">
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
   </body>
